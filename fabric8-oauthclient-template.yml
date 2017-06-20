@@ -5,7 +5,7 @@ metadata:
     provider: fabric8
   name: fabric8-oauthclient-template
 parameters:
-- name: APISERVER_HOSTPORT
+- name: URL
 objects:
 - apiVersion: v1
   kind: OAuthClient
