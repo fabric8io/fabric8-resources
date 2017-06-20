@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Template
+metadata:
+  labels:
+    provider: fabric8
+  name: fabric8-oauthclient-template
+parameters:
+- name: APISERVER_HOSTPORT
+objects:
+- apiVersion: v1
+  kind: OAuthClient
+  metadata:
+    name: fabric8-online-platform
+  secret: fabric8
+  redirectURIs:
+  - "${URL}"
+  grantMethod: prompt
