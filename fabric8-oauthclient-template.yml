@@ -13,5 +13,6 @@ objects:
     name: fabric8-online-platform
   secret: fabric8
   redirectURIs:
-  - "${URL}"
+  - "http://${URL}"
+  - "https://${URL}"
   grantMethod: prompt
